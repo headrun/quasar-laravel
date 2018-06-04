@@ -1,8 +1,16 @@
 <template>
   <div class="CHAT" align="center">
   	<q-card class="bg-white q-mb-md">
-  		<h6>CHat Box Component</h6>
+  		<h6>Chat Box Component</h6>
   	</q-card>
+
+  	<blockquote align="left" class="q-mb-md">
+      <p>For More details see below link.</p>
+      <small><a href="https://quasar-framework.org/components/chat.html" target="_blank">
+        https://quasar-framework.org/components/chat.html
+      </a></small>
+    </blockquote>
+
   	<div class="row">
 	  	<div class="col-lg-2 col-md-2"></div>
 	  	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">

@@ -32,6 +32,36 @@
 		.q-layout-drawer {
 			background: #fff !important;
 
+			.legal {
+				position: absolute;
+			    bottom: 0;
+			    width: 100%;
+			    border-top: 1px solid #eee;
+			    padding: 10px;
+			    overflow: hidden;
+			    background-color: #fff;
+
+			    .copyright {
+			    	font-size: 13px;
+			    	text-overflow: ellipsis;
+					overflow: hidden;
+
+					a {
+						color: #F44336 !important;
+						font-weight: bold;
+						text-decoration: none;
+					}
+			    }
+
+			    .version {
+			    	white-space: nowrap;
+			    	text-overflow: ellipsis;
+				    overflow: hidden;
+				    margin-top: 5px;
+				    font-size: 13px;
+			    }
+			}
+
 			.q-list {
 				padding: 0px 0;
 				font-family: "Roboto", sans-serif;
@@ -48,6 +78,14 @@
 					padding: 12px 16px;
 					cursor: default;
 
+					@media $tab {
+						padding: 10px 16px;
+					}
+
+					@media $mobile {
+						padding: 10px 16px;
+					}
+
 					a {
 						text-decoration: none;
 						color: #333;
@@ -58,36 +96,6 @@
 							color: #F44336;
 						}
 					}
-				}
-
-				.legal {
-					position: absolute;
-				    bottom: 0;
-				    width: 100%;
-				    border-top: 1px solid #eee;
-				    padding: 15px;
-				    overflow: hidden;
-				    background-color: #fff;
-
-				    .copyright {
-				    	font-size: 13px;
-				    	text-overflow: ellipsis;
-    					overflow: hidden;
-
-    					a {
-    						color: #F44336 !important;
-    						font-weight: bold;
-    						text-decoration: none;
-    					}
-				    }
-
-				    .version {
-				    	white-space: nowrap;
-				    	text-overflow: ellipsis;
-					    overflow: hidden;
-					    margin-top: 5px;
-					    font-size: 13px;
-				    }
 				}
 			}
 		}

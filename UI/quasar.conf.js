@@ -89,15 +89,26 @@ module.exports = function (ctx) {
         'QSelect',
         'QCollapsible',
         'QEditor',
-        'QSpinnerDots'
+        'QSpinnerDots',
+        'QTab',
+        'QTabPane',
+        'QBreadcrumbs',
+        'QBreadcrumbsEl',
+        'QUploader',
+        'QModal',
+        'QModalLayout',
+        'QPopover',
+        'QTooltip'
       ],
       directives: [
-        'Ripple'
+        'Ripple',
+        'CloseOverlay'
       ],
       // Quasar plugins
       plugins: [
         'Notify',
-        'Loading'
+        'Loading',
+        'Dialog'
       ]
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language

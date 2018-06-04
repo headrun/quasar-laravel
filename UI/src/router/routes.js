@@ -14,6 +14,8 @@ export default [
     children: [
       { path: 'dashboard', component: () => import('components/admin/home') },
       { path: 'tables', component: () => import('components/admin/about') },
+      { path: 'popups', component: () => import('components/admin/popups') },
+      { path: 'tabs', component: () => import('components/admin/tabs') },
       { path: 'listItems', component: () => import('components/admin/listItems') },
       { path: 'notify', component: () => import('components/admin/notify') },
       { path: 'chat', component: () => import('components/admin/chat') },

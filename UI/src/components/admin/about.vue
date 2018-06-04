@@ -4,7 +4,7 @@
   		<h6>Table Component</h6>
   	</q-card>
 		<q-table
-			class="bg-white"
+			class="bg-white q-mb-md"
 	    title="Table Title"
 	    :data="tableData"
 	    :columns="columns"
@@ -18,6 +18,13 @@
         />
       </template>
 	  </q-table>
+
+	  <blockquote align="left">
+      <p>For More details see below link.</p>
+      <small><a href="https://quasar-framework.org/components/datatable.html" target="_blank">
+        https://quasar-framework.org/components/datatable.html
+      </a></small>
+    </blockquote>
   </div>
 </template>
 

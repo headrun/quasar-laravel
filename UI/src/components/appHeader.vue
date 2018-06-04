@@ -50,6 +50,14 @@
 	        <router-link class="navlink" :to="{ path: '/admin/tables' }" >Tables</router-link>
 	      </q-item>
 	      <q-item>
+	        <q-item-side icon="sms" />
+	        <router-link class="navlink" :to="{ path: '/admin/popups' }" >Popups</router-link>
+	      </q-item>
+	      <q-item>
+	        <q-item-side icon="tab" />
+	        <router-link class="navlink" :to="{ path: '/admin/tabs' }" >Tabs</router-link>
+	      </q-item>
+	      <q-item>
 	        <q-item-side icon="trending_up" />
 	        <router-link class="navlink" :to="{ path: '/admin/listItems' }" >List Items</router-link>
 	      </q-item>
@@ -73,17 +81,16 @@
 	        <q-item-side icon="input" />
 	        <a href="javascript:void(0)" @click="$router.push('/')">Logout</a>
 	      </q-item>
-	      
-	    	<!-- Keep this always last -->
-      	<div class="legal">
-	        <div class="copyright">
-	            © 2018 - 2019 <a href="javascript:void(0);"> - HEADRUN</a>.
-	        </div>
-	        <div class="version">
-	            <b>Version: </b> 0.1
-	        </div>
-	    	</div>
 	    </q-list>
+	    <!-- Keep this always last -->
+    	<div class="legal">
+        <div class="copyright">
+            © 2018 - 2019 <a href="javascript:void(0);"> - HEADRUN</a>.
+        </div>
+        <div class="version">
+            <b>Version: </b> 0.1
+        </div>
+    	</div>
 	  </q-layout-drawer>
 	</div>
 </template>
@@ -94,7 +101,7 @@ export default {
   data () {
     return {
     	// leftDrawerOpen: this.$q.platform.is.desktop
-    	leftDrawerOpen: false
+    	leftDrawerOpen: true
     }
   },
   methods: {

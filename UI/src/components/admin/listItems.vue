@@ -3,7 +3,7 @@
   	<q-card class="bg-white q-mb-md">
   		<h6>List and List Items Component</h6>
   	</q-card>
-		<div class="row gutter-md">
+		<div class="row gutter-md q-mb-md">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<q-card class="bg-white">
 					<q-list link>
@@ -37,6 +37,13 @@
 				</q-card>
 			</div>
 		</div>
+
+		<blockquote align="left">
+	      <p>For More details see below link.</p>
+	      <small><a href="https://quasar-framework.org/components/lists-and-list-items.html" target="_blank">
+	        https://quasar-framework.org/components/lists-and-list-items.html
+	      </a></small>
+	    </blockquote>
   </div>
 </template>
 

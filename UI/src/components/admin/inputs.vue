@@ -75,6 +75,22 @@
 					</q-card-main>
 				</q-card>
   		</div>
+  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  			<q-card class="bg-white">
+  				<q-card-title>
+  					File Uploader
+  				</q-card-title>
+  				<q-card-main align="left">
+  					<q-uploader
+						  url=""
+						  method="PUT"
+						  :headers="{ 'x-amz-acl': '', 'content-type': 'csv' }"
+						  :url-factory="getSignedUrl"
+						  :send-raw="true"
+						/>
+					</q-card-main>
+				</q-card>
+  		</div>
   	</div>
   	<blockquote>
 		  <p>For all components see below link.</p>
@@ -117,7 +133,13 @@ export default {
     },
     selected (item) {
       this.$q.notify(`Selected suggestion "${item.label}"`)
-    }
+    },
+    async getSignedUrl (file) {
+		  const contentType = file.type // To send the correct Content-Type
+		  const fileName = file.name // If you want to use this value to calculate the S3 Key.
+		  const response = await api.getSignedUrl({ fileName, contentType }) // Your api call to a sever that calculates the signed url.
+		  return response.data.url
+		}
   }
 }
 </script>
