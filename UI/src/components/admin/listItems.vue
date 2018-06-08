@@ -8,7 +8,7 @@
 				<q-card class="bg-white">
 					<q-list link>
 						<q-list-header>General</q-list-header>
-			        <q-item tag="label" v-for="i in 4" :key="i">
+			        <q-item tag="label" v-for="i in [1,2,3,4]" :key="i">
 			          <q-item-side>
 			            <q-checkbox v-model="checked_one" color="secondary" />
 			          </q-item-side>
@@ -24,7 +24,7 @@
 				<q-card class="bg-white">
 					<q-list link>
 						<q-list-header>General</q-list-header>
-			        <q-item tag="label" v-for="i in 4" :key="i">
+			        <q-item tag="label" v-for="i in [1,2,3,4]" :key="i">
 			          <q-item-side>
 			            <q-checkbox v-model="checked_one" color="secondary" />
 			          </q-item-side>

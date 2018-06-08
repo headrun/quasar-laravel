@@ -5,7 +5,7 @@
   	</q-card>
 		<q-table
 			class="bg-white q-mb-md"
-	    title="Table Title"
+	    title="Table With Row Click Option"
 	    :data="tableData"
 	    :columns="columns"
 	    row-key="name"
@@ -17,6 +17,12 @@
           class="col-12"
         />
       </template>
+
+      <q-tr slot="body" slot-scope="props" :props="props" @click.native="rowClick(props.row)" class="cursor-pointer">
+		    <q-td v-for="col in props.cols" :key="col.name" :props="props">
+		      {{ col.value }}
+		    </q-td>
+		  </q-tr>
 	  </q-table>
 
 	  <blockquote align="left">
@@ -79,7 +85,15 @@ export default {
 	    ]
     }
   },
-  created () {}
+  created () {},
+  methods : {
+  	rowClick (data) {
+  		this.$q.dialog({
+        title: 'Alert',
+        message: 'You clicked on : ' + data.name
+      })
+  	}
+  }
 }
 </script>
 

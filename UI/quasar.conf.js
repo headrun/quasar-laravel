@@ -98,7 +98,10 @@ module.exports = function (ctx) {
         'QModal',
         'QModalLayout',
         'QPopover',
-        'QTooltip'
+        'QTooltip',
+        'QChipsInput',
+        'QOptionGroup',
+        'QRating'
       ],
       directives: [
         'Ripple',
