@@ -13,5 +13,7 @@ npm install -g vue-cli
 
 npm install -g quasar-cli
 
-
-Then Clone the Project :-) 
+ - Clone the Project
+ - cd quasar-laravel/UI/ (go to inside project_name and UI folder)
+ - quasar dev -m pwa (do this for rn dev server)
+ - quasar build -m pwa (do this to get build files to deploy into production)
